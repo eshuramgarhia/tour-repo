@@ -1,21 +1,20 @@
-pipeline {
+ pipeline {
     agent any
-
-    
-    environment {
-        NODE_ENV = 'node_18_LTS'
-    }
 
     tools {
         nodejs 'nodejs'   // Jenkins > Global Tool Configuration ch NodeJS name
+    }
+
+    environment {
+        NODE_ENV = 'node_18_LTS'
     }
 
     stages {
 
         stage('Checkout Code') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/eshuramgarhia/tour-repo.git'
+                git branch: 'master',
+                    url: 'https://github.com/eshuramgarhia/last-try.git'
             }
         }
 
