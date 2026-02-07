@@ -14,7 +14,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/eshuramgarhia/backend-tour123.git'
+                    url: 'https://github.com/eshuramgarhia/tour-repo.git'
             }
         }
 
