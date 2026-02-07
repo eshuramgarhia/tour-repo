@@ -14,7 +14,7 @@
         stage('Checkout Code') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/eshuramgarhia/last-try.git'
+                    url: 'https://github.com/eshuramgarhia/tour-repo.git'
             }
         }
 
