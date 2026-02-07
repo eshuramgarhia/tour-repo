@@ -13,7 +13,7 @@
 
         stage('Checkout Code') {
             steps {
-                git branch: 'master',
+                git branch: 'main',
                     url: 'https://github.com/eshuramgarhia/last-try.git'
             }
         }
