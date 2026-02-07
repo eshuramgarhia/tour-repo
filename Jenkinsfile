@@ -3,7 +3,7 @@ pipeline {
 
     
     environment {
-        NODE_ENV = 'development
+        NODE_ENV = 'development'
     }
 
     tools {
