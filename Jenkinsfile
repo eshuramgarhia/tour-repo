@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        NODE_ENV = 'any'
+        NODE_ENV = 'node_18_LTS'
     }
 
     stages {
