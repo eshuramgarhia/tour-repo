@@ -6,7 +6,7 @@
     }
 
     environment {
-        NODE_ENV = 'node_18_LTS'
+        NODE_ENV = 'NodeJS 18.1.0'
     }
 
     stages {
