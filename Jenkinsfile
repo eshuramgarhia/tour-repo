@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'nodejs'   // Jenkins > Global Tool Configuration ch NodeJS name
+        nodejs 'NodeJS'   // Jenkins > Global Tool Configuration ch NodeJS name
     }
 
     environment {
-        NODE_ENV = 'any'
+        NODE_ENV = 'NodeJS 18.1.0'
     }
 
     stages {
