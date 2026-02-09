@@ -22,10 +22,7 @@
             steps {
                 bat 'npm install'
             }
-        }
-
        
-        }
 
     }
   }
