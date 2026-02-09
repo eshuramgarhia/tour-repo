@@ -1,28 +1,23 @@
- pipeline {
+pipeline {
     agent any
 
-    tools {
-        nodejs 'NodeJS'   // Jenkins > Global Tool Configuration ch NodeJS name
-    }
-
-    environment {
-        NODE_ENV = 'NodeJS 18.1.0'
-    }
-
     stages {
-
-        stage('Checkout Code') {
+        stage('Checkout') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/eshuramgarhia/tour-repo.git'
+                checkout scm
             }
         }
 
-        stage('Install Dependencies') {
+        stage('Install') {
             steps {
                 bat 'npm install'
             }
-       
+        }
 
+        stage('Test') {
+            steps {
+                bat 'npm test'
+            }
+        }
     }
-  }
+}
